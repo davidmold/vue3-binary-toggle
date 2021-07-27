@@ -1,7 +1,7 @@
 {
   "name": "vue3-binary-toggle",
-  "version": "1.0.1",
-  "main": "BinaryToggle.vue",
+  "version": "1.0.2",
+  "main": "src/BinaryToggle.vue",
   "dependencies": {
     "vue": "^3.0.5"
   },

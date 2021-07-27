@@ -73,7 +73,7 @@ export default {
 
   .on-off-holder.large{
     width:30px;
-    height:17px;
+    height:18px;
     border-radius:9px;
     margin-left:5px;
   }

@@ -1,7 +1,7 @@
 <template>
-  <div class="flabel" v-on:click="change" :class="{disabled: disabled}">
+  <div class="flabel" v-on:click="change" :class="{disabled: disabled, dark: dark}">
     <div class="label"><slot></slot></div>
-    <div class="on-off-holder"  :class="{sel: value, large: large}">
+    <div class="on-off-holder"  :class="{sel: modelValue, large: large}">
       <div class="on-off-circle" ></div>
     </div>
   </div>
@@ -12,7 +12,8 @@ export default {
   props: {
     modelValue: Boolean,
     disabled: Boolean,
-    large: Boolean
+    large: Boolean,
+    dark: Boolean
   },
   methods: {
     change() {
@@ -42,8 +43,16 @@ export default {
     background-color:#fff;
   }
 
+  .flabel.dark:hover{
+    background-color:#222;
+  }
+
   .flabel.disabled:hover{
     background-color:#eee;
+  }
+
+   .flabel.disabled.dark:hover{
+    background-color:#000;
   }
 
   .flabel .label{

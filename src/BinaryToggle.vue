@@ -67,6 +67,10 @@ export default {
     position:relative;
   }
 
+  .flabel.dark .onn-off-holder{
+    background-color:#444;
+  }
+
   .on-off-holder.large{
     width:30px;
     height:17px;
